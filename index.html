@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Teachers Day - A Special Tribute</title>
     <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -28,6 +30,97 @@
     </div>
         
     </nav>
+
+
+
+
+        <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Happy</span>
+                    <span class="title-line highlight">Teachers Day</span>
+                    <span class="title-line">2024</span>
+                </h1>
+                <p class="hero-subtitle">Celebrating the pillars of knowledge and wisdom</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('message')">
+                        <i class="fas fa-heart"></i>
+                        Read Message
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('gallery')">
+                        <i class="fas fa-images"></i>
+                        View Gallery
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="sliding-cards-container">
+                    <div class="card-stack" onclick="slideToNextCard(this)">
+                        <!-- First Card (Visible Initially) -->
+                        <div class="card first-card active">
+                            <div class="card-content">
+                                <div class="card-decoration">
+                                    <div class="decoration-circle circle-1"></div>
+                                    <div class="decoration-circle circle-2"></div>
+                                    <div class="decoration-circle circle-3"></div>
+                                </div>
+                                <div class="card-icon-main">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3 class="card-title">Happy Teachers Day!</h3>
+                                <p class="card-subtitle">Click to reveal more</p>
+                                <div class="slide-hint">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Second Card (Hidden Behind First) -->
+                        <div class="card second-card">
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <div class="card-icon-main">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <h3 class="card-title">Thank You, Teacher!</h3>
+                                    <p class="card-subtitle">For your dedication and patience</p>
+                                </div>
+                                
+                                <div class="card-body">
+                                    <div class="message-section">
+                                        <p class="message-text">You are the architect of dreams, the builder of character, and the guiding light that illuminates the path to knowledge.</p>
+                                    </div>
+                                    
+                                    <div class="quote-section">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="quote-text">"For your dedication, patience, and the countless hours you've invested in shaping our futures."</p>
+                                    </div>
+                                    
+                                    <div class="signature-section">
+                                        <p class="signature-text">With love and respect,</p>
+                                        <p class="signature-name">Your Students</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide-back-hint">
+                                    <i class="fas fa-arrow-left"></i>
+                                    <span>Click to go back</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
 
 
