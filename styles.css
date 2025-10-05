@@ -1,0 +1,61 @@
+:root{
+  --bg-start:#0f172a;
+  --bg-end:#111827;
+  --btn-start:#7c3aed;
+  --btn-end:#06b6d4;
+  --btn-hover-start:#8b5cf6;
+  --btn-hover-end:#22d3ee;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  background: radial-gradient(1200px 800px at 50% -10%, #1f2937, var(--bg-start)) fixed,
+              linear-gradient(180deg, var(--bg-start), var(--bg-end)) fixed;
+  color: white;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 4rem 1rem;
+}
+
+.btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.9rem 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--btn-start), var(--btn-end));
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25), inset 0 -2px 0 rgba(255,255,255,0.15);
+  transition: transform 0.12s ease-out, box-shadow 0.2s ease-out, filter 0.2s ease-out, background 0.3s ease-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  filter: saturate(1.15);
+  background: linear-gradient(135deg, var(--btn-hover-start), var(--btn-hover-end));
+  box-shadow: 0 14px 24px rgba(0,0,0,0.28), inset 0 -2px 0 rgba(255,255,255,0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25), inset 0 -1px 0 rgba(255,255,255,0.12);
+}
+
+#confetti-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
